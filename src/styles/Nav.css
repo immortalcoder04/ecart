@@ -1,0 +1,79 @@
+/* General body reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar styling */
+  nav {
+    background-color: #333;  /* Dark background for the navbar */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navBox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* max-width: 1200px; */
+    align-items: center;
+  }
+  
+  .navBox span:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;  /* White text for the shop name */
+    letter-spacing: 1px;
+  }
+  
+  .cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .cart span {
+    font-size: 24px;
+    color: #fff;
+
+  }
+  
+  .cart span :nth-child(1):hover {
+    cursor: pointer;
+    color: #ffcc00;  /* Hover effect on cart icon */
+  }
+
+  .cart span:nth-child(2){
+    position: relative;
+    top: -5px;
+    background-color: black;
+    border-radius: 50%;
+    font-size: 13px;
+    width: 100%;
+    
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .navBox {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navBox span:first-child {
+      font-size: 22px;
+    }
+  
+    .cart {
+      margin-top: 10px;
+    }
+  }
+  
